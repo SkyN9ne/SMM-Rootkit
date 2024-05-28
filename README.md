@@ -91,7 +91,7 @@ qemu libvirt virt-manager ebtables dnsmasq
 ```
 
 For qemu to show the custom OVMF binary, you need to create a file `/usr/share/qemu/firmware/60-ovmf-rootkit-x86_64.json` and inside it add our FV entry:
-```
+```json
 {
   "description": "UEFI SMM rootkit OVMF firmware for x86_64",
   "interface-types": [
